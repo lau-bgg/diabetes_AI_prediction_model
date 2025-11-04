@@ -118,7 +118,7 @@ notas_medicas <- as.character(data_frame_real$text)
 edades <- c()
 for (notas in notas_medicas){
   edad_encontrada <- regmatches(notas, 
-    regexpr("(?i)\\b(?:edad[: ]*|age[: ]*|\\b)(\\d{1,3})(?=\\s*(años?|years?))?", notas, perl = TRUE)
+    regexpr("(?i)\\b(?:edad[: ]*|age[: ]*|aged[:]*|[0-9*]-year-old[:]*|[0-9*]-years-old[:]*|\\b)(\\d{1,3})(?=\\s*(años?|years?))?", notas, perl = TRUE)
   )
   edad_num <- as.numeric(gsub("\\D", "", edad_encontrada))
   if (length(edad_num) > 0 && !is.na(edad_num)) {
