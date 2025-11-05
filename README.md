@@ -28,10 +28,15 @@ An important aspect is that the information contained in the column named “med
 ### Main pipeline
 ### Libraries used:
 > pandas
+
 > numpy
+
 > from sklearn.model_selection: train_test_split
+
 > from klearn.metrics: f1_score, classification_report
+
 > from sentence_transformers: SentenceTransformer
+
 > from xgboost: XGBClassifier
 
 ### Split data
