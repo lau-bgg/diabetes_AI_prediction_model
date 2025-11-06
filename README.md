@@ -7,6 +7,7 @@ The structure of the repository is the following:
   - R_REPRESENTACION_DIABETES_DIAGNOSTICO.R
 - README.md
 - ia-diabetes-2.ipynb
+A web version is also available in this respository
 
 ## Purpose of the project
 This project was created when participating in BeTECH Hackaton contest. We aime to create and train an AI which helps us predict whether a patient has diabetes based on a medical note provided externally.
